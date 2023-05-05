@@ -19,7 +19,7 @@ spec:
       containers:
         - name: nginx
           imagePullPolicy: Always
-          image: arturix/nginx:v0.1.0
+          image: arturix/nginx:v0.1.8
           ports:
             - containerPort: 80
       imagePullSecrets:
