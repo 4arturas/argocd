@@ -35,3 +35,12 @@ chmod +x upgrade.sh
 ```sh
 ./upgrade.sh v0.1.2
 ````
+
+# 
+```sh
+kubectl apply -f applications.yaml
+````
+
+```sh
+kubectl delete -f applications.yaml
+````
