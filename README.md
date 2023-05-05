@@ -15,6 +15,7 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 kubectl port-forward svc/argocd-server -n argocd 8080:443
 ````
 
+# Docker
 
 ```sh
 docker pull nginx:1.23.4
@@ -22,4 +23,15 @@ docker pull nginx:1.23.4
 
 ```sh
 docker tag nginx:1.23.4 arturix/nginx:v0.1.0
+````
+
+# Script
+
+```sh
+chmod +x upgrade.sh
+````
+
+./upgrade.sh {docker new tag}
+```sh
+./upgrade.sh v0.1.2
 ````
